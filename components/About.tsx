@@ -11,7 +11,7 @@ const About = () => {
             <h2 className="text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
                 Proactive and detail-oriented <span className='text-purple'>Computer Science student at UNSW</span>
             </h2>
-            <p className="mt-4 text-base/6 text-neutral-200">
+            <p className="mt-4 text-base/6 text-neutral-200 lg:py-5">
                 Proficient in programming languages including Python, C and JavaScript with a strong foundation in algorithms, machine
                 learning, and web development. Actively seeking an internship position where I can further develop my software
                 engineering skills and contribute to real-world technology solutions.
@@ -21,24 +21,31 @@ const About = () => {
 
           </WobbleCard>
 
-          <WobbleCard containerClassName='col-span-1 lg:col-span-2'>
+          <WobbleCard containerClassName='col-span-1 lg:col-span-2 min-h-[35vh]'>
               <div className="max-w-xs">
                 <h2 className="text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-                    Proactive and detail-oriented <span className='text-purple'>Computer Science student at UNSW</span>
+                    My <span className='text-purple'>tech stack</span>
                 </h2>
-                <p className="mt-4 text-base/6 text-neutral-200">
-                    Proficient in programming languages including Python, C and JavaScript with a strong foundation in algorithms, machine
-                    learning, and web development. Actively seeking an internship position where I can further develop my software
-                    engineering skills and contribute to real-world technology solutions.
-                </p>
+                <div className="flex gap-1 lg:gap-5 w-fit absolute right-3 lg:right-10">
+                  <div className="flex flex-col gap-3 lg:gap-8">
+                    {['React.js', 'Next.js', 'TypeScript'].map((item) => (
+                      <span key={item} className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]">
+                        {item}
+                      </span>
+                    ))}
+                    <span className="py-4 px-3 rounded-lg text-center bg-[#10132e]"></span>
+                  </div>
+                  
+                  <div className="flex flex-col gap-3 lg:gap-8">
+                    <span className="py-4 px-3 rounded-lg text-center bg-[#10132e]"></span>
+                    {['Tailwind', 'MongoDB', 'Express'].map((item) => (
+                      <span key={item} className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]">
+                        {item}
+                      </span>
+                    ))}
+                  </div>
+                </div>
               </div>
-              {/* <div className="xs:hidden w-[20vh] h-[20vh] lg:w-[40vh] lg:h-[40vh] absolute -right-10 -bottom-10">
-                <img
-                  src="/b1.svg"
-                  alt="/b1.svg"
-                  className='lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh] object-cover object-center'
-                />
-            </div> */}
           </WobbleCard>
         </div>
     </div>

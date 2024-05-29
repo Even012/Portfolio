@@ -12,7 +12,7 @@ const Footer = () => {
     setCopied(true)
   }
   return (
-    <footer className="w-full pt-20 pb-10 h-[100vh]" id="contact">
+    <footer className="w-full pt-20 pb-10 h-[100vh] px-10" id="contact">
       {/* background grid */}
       <div className="w-full absolute left-0 bottom-[10vh] min-h-96">
         <img
@@ -24,12 +24,10 @@ const Footer = () => {
 
       <div className="flex flex-col items-center justify-center min-h-[75vh]">
         <h1 className="heading lg:max-w-[45vw]">
-          Ready to take <span className="text-purple">your</span> digital
-          presence to the next level?
+        <span className="text-purple">Reach out</span> to me
         </h1>
         <p className="text-white-200 md:mt-10 my-5 text-center">
-          Reach out to me today and let&apos;s discuss how I can help you
-          achieve your goals.
+          If you have any queries at all, feel free to reach out, I am glad to answer them.
         </p>
 
         <MagicButton 
@@ -41,12 +39,12 @@ const Footer = () => {
         />
 
       </div>
-      <div className="flex mt-16 md:flex-row flex-col justify-between items-center px-10">
+      <div className="flex mt-16 flex-row justify-between items-center">
         <p className="md:text-base text-sm md:font-normal font-light">
           Copyright © 2024 Even Chen
         </p>
 
-        <div className="flex items-center md:gap-3 gap-6">
+        <div className="flex items-center gap-3 lg:gap-6">
           {socialMedia.map((info) => (
             <a
               key={info.id}
