@@ -72,16 +72,16 @@ export const navItems = [
   export const projects = [
     {
       id: 1,
-      title: "3D Solar System Planets to Explore",
-      des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-      img: "/p1.svg",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-      link: "https://github.com/adrianhajdin?tab=repositories",
+      title: "Anyparking - Car Space Renting Management System",
+      des: "a Web-based platform for car spaces you wish to provide or make a booking for.",
+      img: "/img_anyparking.png",
+      iconLists: ["/re.svg", "/tail.svg", "/django.svg", "/js.svg", "/docker.svg"],
+      link: "https://github.com/Even012/capstone-project",
     },
     {
       id: 2,
-      title: "Yoom - Video Conferencing App",
-      des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
+      title: "Airbrb - Renting platform website modelled off Airbnb",
+      des: "modell off the popular property renting platfrom Airbnb using ReactJS",
       img: "/p2.svg",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
       link: "https://github.com/adrianhajdin/zoom-clone",

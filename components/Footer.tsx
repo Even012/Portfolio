@@ -1,13 +1,20 @@
-import { FaLocationArrow } from "react-icons/fa6";
-
+"use client"
+import React from "react";
 import { socialMedia } from "@/data";
 import MagicButton from "./ui//MagicButton";
+import { IoCopyOutline } from "react-icons/io5";
 
 const Footer = () => {
+  const [copied, setCopied] = React.useState(false);
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText('chenyuanjian35@gmail.com')
+    setCopied(true)
+  }
   return (
-    <footer className="w-full pt-20 pb-10" id="contact">
+    <footer className="w-full pt-20 pb-10 h-[100vh]" id="contact">
       {/* background grid */}
-      <div className="w-full absolute left-0 -bottom-72 min-h-96">
+      <div className="w-full absolute left-0 bottom-[10vh] min-h-96">
         <img
           src="/footer-grid.svg"
           alt="grid"
@@ -15,7 +22,7 @@ const Footer = () => {
         />
       </div>
 
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center justify-center min-h-[75vh]">
         <h1 className="heading lg:max-w-[45vw]">
           Ready to take <span className="text-purple">your</span> digital
           presence to the next level?
@@ -24,13 +31,15 @@ const Footer = () => {
           Reach out to me today and let&apos;s discuss how I can help you
           achieve your goals.
         </p>
-        <a href="https://mailto:chenyuanjian35@gmail.com">
-          <MagicButton
-            title="Let's get in touch"
-            icon={<FaLocationArrow />}
-            position="right"
-          />
-        </a>
+
+        <MagicButton 
+          title={copied ? 'Email copied' : 'Copy my email'}
+          icon={<IoCopyOutline />}
+          position='left'
+          otherClasses="!bg-[#161a31]" 
+          handleClick={handleCopy}
+        />
+
       </div>
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center px-10">
         <p className="md:text-base text-sm md:font-normal font-light">

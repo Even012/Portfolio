@@ -18,26 +18,33 @@ const Hero = () => {
             <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
 
             <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center'>
-                <h2 className='uppercase tracking-widest text-xs text-center text-blue-100 max-w-80'>
-                  IT Student at UNSW | Aspiring Software Developer
+                <h2 className='uppercase tracking-widest text-sm text-center text-blue-100 max-w-80'>
+                  Hi There, welcome to my site.
                 </h2>
                 <TextGenerateEffect 
                   className='text-center text-[40px] md:text-5xl lg:text-6xl'
-                  words='Even Chen'
+                  words='I&apos;m Even Chen, a CS student recently graduated from UNSW.'
                 />
 
-                <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>
-                    Hi, I&apos;m Even, a CS student recently graduated from UNSW.
-                </p>
-
-                <a href='#about'>
-                    <MagicButton 
-                      title='show my work'
-                      icon={<FaLocationArrow />}
-                      position='right'
-                    
-                    />
-                </a>
+                {/* <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>
+                    I&apos;m Even, a CS student recently graduated from UNSW.
+                </p> */}
+                <div className="flex flex-row gap-10">
+                  <a href='#about'>
+                      <MagicButton 
+                        title='see portfolio'
+                        icon={<FaLocationArrow />}
+                        position='right'
+                      />
+                  </a>
+                  <a href='#contact'>
+                      <MagicButton 
+                        title='contact me'
+                        icon={<FaLocationArrow />}
+                        position='right'
+                      />
+                  </a>
+                </div>
             </div>
         </div>
     </div>     
