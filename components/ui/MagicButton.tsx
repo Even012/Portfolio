@@ -15,10 +15,10 @@ const MagicButton = ({
   // </span>
 // </button>
 
-<button className="p-[3px] relative">
+<button className="relative inline-flex h-12 w-full overflow-hidden rounded-lg p-[1px] focus:outline-none md:w-60 md:mt-10" onClick={handleClick}>
 <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
-<div className=" inline-flex gap-2 h-full w-full cursor-pointer items-center justify-center px-8 py-2  bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent">
- {position === 'left' && icon}
+<div className={`inline-flex gap-2 h-full w-full cursor-pointer items-center justify-center px-6 py-2  bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent ${otherClasses}`}>
+    {position === 'left' && icon}
     {title} 
     {position === 'right' && icon}
 </div>
