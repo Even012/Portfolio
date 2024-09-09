@@ -29,11 +29,11 @@ const About = () => {
                   Proficient in programming languages including Python, C/C++ and JavaScript with a strong foundation in algorithms, machine
                   learning, and web development. 
                 </p>
-                <div className="flex gap-1 lg:gap-5 w-fit absolute bottom-5 right-3 lg:right-10">
+                <div className="flex gap-1 lg:gap-5 w-fit mt-4 ml-8 sm:absolute sm:bottom-5 sm:right-3 lg:right-10">
 
                   <div className="flex flex-col gap-3 lg:gap-8">
                     {['React.js', 'Next.js', 'TypeScript'].map((item) => (
-                      <span key={item} className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]">
+                      <span key={item} className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 rounded-lg text-center bg-[#10132E]">
                         {item}
                       </span>
                     ))}
@@ -43,7 +43,7 @@ const About = () => {
                   <div className="flex flex-col gap-3 lg:gap-8">
                     <span className="py-4 px-3 rounded-lg text-center bg-[#10132e]"></span>
                     {['Tailwind', 'MongoDB', 'Express'].map((item) => (
-                      <span key={item} className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]">
+                      <span key={item} className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:rounded-lg text-center bg-[#10132E]">
                         {item}
                       </span>
                     ))}
