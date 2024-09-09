@@ -29,7 +29,7 @@ const Hero = () => {
                 {/* <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>
                     I&apos;m Even, a CS student recently graduated from UNSW.
                 </p> */}
-                <div className="flex flex-row gap-10">
+                <div className="flex flex-row gap-2">
                   <a href='#about'>
                       <MagicButton 
                         title='see portfolio'
