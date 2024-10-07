@@ -12,7 +12,7 @@ const About = () => {
                 Proactive and detail-oriented <span className='text-purple'>Computer Science student at UNSW</span>
             </h2>
             <p className="mt-4 text-lg text-neutral-200 lg:py-5">
-                Actively seeking an internship position where I can further develop my software
+                Actively seeking a tech position where I can further develop my software
                 engineering skills and contribute to real-world technology solutions.
             </p>
 

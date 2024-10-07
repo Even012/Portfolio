@@ -7,8 +7,11 @@ import { ThemeProvider } from "next-themes";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Even's Portfolio",
+  title: "EvenMe",
   description: "-",
+  icons: {
+    icon: '/favicon.ico', 
+  },
 };
 
 export default function RootLayout({
